@@ -727,9 +727,7 @@
 #     total += numbers
 # print(total)
 
-
 from math import *
-from typing import Collection
 
 
 # n = int(input())
@@ -1044,3 +1042,826 @@ from typing import Collection
 #     print('YES')
 # elif flag == True:
 #     print('NO')
+
+
+# n = int(input())
+
+# for i in range(2, n + 1):
+#     if n % i == 0:
+#         break
+# print(i)
+
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     if (i >= 5 and i <= 9) or (i >= 17 and i <= 37) or (i >= 78 and i <= 87):
+#         continue
+#     print(i)
+
+
+# max_num = -1
+# total = 0
+# for i in range(1, 11):
+#     x = int(input())
+#     if x < 0:
+#         total += x
+#     if x >= max_num:
+#         max_num = x
+#     elif x > 0:
+#         print('NO')
+
+# print(max_num)
+# print(total)
+
+# x = int(input())
+# max_num = -1
+# total = 0
+# if x < 0:
+#     while x > 0:
+#         if x < 0:
+#             total += x
+#         if x >= max_num:
+#             max_num = x
+#     print(max_num)
+#     print(total)
+
+# else:
+#     print('NO')
+
+
+# mx = -10**6 - 1
+# s = 0
+# for i in range(10):
+#     x = int(input())
+#     if x < 0:
+#         s += x
+#     if x < 0 and x > mx:
+#         mx = x
+# if s < 0:
+#     print(s)
+#     print(mx)
+# else:
+#     print('NO')
+
+
+# n = int(input())
+# max_digit = -1
+
+# while n > 0:
+#     digit = n % 10
+#     if digit % 3 == 0:
+#         if digit > max_digit:
+#             max_digit = digit
+#     n = n // 10
+
+# if max_digit >= 0:
+#     print(max_digit)
+# else:
+#     print('NO')
+
+
+# n = int(input())
+# big_num = 0
+
+# while n > 0:
+#     big_num = n % 10
+#     n = n // 10
+
+# print(big_num)
+
+
+# n = int(input())
+# product = 1
+# while n > 0:
+#     digit = n % 10
+#     product *= digit
+#     n //= 10
+# print(product)
+
+
+# n = int(input())
+
+# for i in range(n):
+#     for j in range(3):
+#         print(n, end=' ')
+#     print()
+
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     for j in range(5):
+#         print(i, end=' ')
+#     print()
+
+
+# n = int(input())
+# for i in range(1, n + 1):
+#     for j in range(1, 10):
+#         print(i, '+', j, '=', i + j)
+#     print()
+
+
+# n = int(input())
+
+# for i in range(1, (n // 2 + 2)):
+#     print('*' * i)
+# for j in range(n // 2, 0, -1):
+#     print('*' * j)
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     for j in range(i):
+#         print(i, end='')
+#     print()
+
+
+#  28n + 30 k + 31 m = 365
+# total = 0
+
+# for n in range(1, 13):
+#     for k in range(1, 13):
+#         for m in range(1, 13):
+#             if 28 * n + 30 * k + 31 * m == 365:
+#                 total += 1
+#                 print('n =', n, 'k =', k, 'm =', m)
+# print('Общее', total)
+
+#  10b + 5k + 0.5t = 100
+# total = 0
+# for b in range(1, 101):
+#     for k in range(1, 101):
+#         for t in range(1, 101):
+#             if 10 * b + 5 * k + 0.5 * t == 100 and b + k + t == 100:
+#                 total += 1
+#                 print('b =', b, 'k =', k, 't =', t)
+# print('Общее', total)
+
+
+from math import pow, factorial
+from typing import Text
+
+# a5 + b5 + c5 + d5 = e5
+
+# for a in range(1, 151):
+#     for b in range(1, 151):
+#         for c in range(1, 151):
+#             for d in range(1, 151):
+#                 for e in range(1, 151):
+#                     if float(pow(a, 5) + pow(b, 5) + pow(c, 5) + pow(d, 5) == pow(e, 5)):
+#                         print(float(a + b + c + d + e))
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     for j in range(1, i + 1):
+#         print(j, end='')
+#     for j in range(i - 1, 0, -1):
+#         print(j, end='')
+#     print()
+
+# a = int(input())
+# b = int(input())
+# sum_digit = 0
+# max_x = 0
+# x = 0
+
+# for i in range(a, b + 1):
+#     for j in range(1, i + 2):
+#         if i % j == 0:
+#             max_x += j
+#             if max_x > x or (max_x == x and i > sum_digit):
+#                 sum_digit == i
+#                 x == max_x
+#     max_x == 0
+# print(sum_digit, x)
+                
+
+# n = int(input())
+
+# for i in range(1, n + 1):
+#     total = 0
+#     for j in range(1, i + 1):
+#         if i % j == 0:
+#             total += 1
+#     print(i, '+' * total, sep='')
+
+
+# n = int(input())
+# total = 0
+# f = 1
+
+# for i in range(1, n + 1):
+#     for j in range(2, i + 1):
+#         f *= i
+#         total = total + f
+# print(total)
+
+
+# a = int(input())
+# b = int(input())
+
+# for i in range(a, b + 1):
+#     tmp = [i % j == 0 for j in range(1, i, 1)]
+#     if tmp.count(True) == 1:
+#         print(i)
+
+
+# n = int(input())
+# s = 0
+
+# while n != 0:
+#     last = n % 10
+#     if last % 2 == 0:
+#         s += last
+#     n //= 10
+    
+# print(s)
+
+
+# n = int(input())
+
+# print('*' * 19)
+# for i in range(n - 2):
+#     print('*                 *')
+
+# print('*' * 19)
+
+
+# n = int(input())
+
+# while n > 99:
+#     last = n % 10
+#     n //= 10
+# print(last)
+
+
+# n = int(input())
+# last = n % 10
+# counter_3 = 0
+# counter_last = 0
+# digit_2 = 0
+# sum_5 = 0
+# set_7 = 1
+# counter_0 = 0
+
+# while n != 0:
+#     if n % 10 == 3:
+#         counter_3 += 1
+#     if last == n % 10:
+#         counter_last += 1
+#     if (n % 10) % 2 == 0:
+#         digit_2 += 1
+#     if n % 10 > 5:
+#         sum_5 += (n % 10)
+#     if n % 10 > 7:
+#         set_7 *= (n % 10)
+#     if n % 10 == 0:
+#         counter_0 += 1
+#     if n % 10 == 5:
+#         counter_0 += 1
+#     n //= 10
+
+# print(counter_3, counter_last, digit_2, sum_5, set_7, counter_0, sep='\n')
+
+
+# total = 0
+# for b in range(1, 101):
+#     for k in range(1, 101):
+#         for t in range(1, 101):
+#             if 10 * b + 5 * k + 0.5 * t == 100 and b + k + t == 100:
+#                 total += 1
+#                 print('b =', b, 'k =', k, 't =', t)
+# print('Общее', total)
+
+
+# a = a3 + b3 = c3 + d3
+# for a in range(1, 34):
+#     for b in range(1, 34):
+#         for c in range(1, 34):
+#             for d in range(1, 34):
+#                 if pow(a, 3) + pow(b, 3) == pow(c, 3) + pow(d, 3) and a != b and a != c and a != d and b != a and b != c and b != d and c != a and c != b and c != d and d != a and d != c and d != b:
+#                     print(pow(a, 3) + pow(b, 3))
+#                 print()
+
+# text = input()
+
+# for i in range(0, len(text), 2):
+#     print(text[i])
+
+
+# name = input()
+# famile = input()
+# faname = input()
+
+# print(name[0], famile[0], faname[0], sep='')
+
+
+# text = input()
+# n = int(text)
+# total = 0
+
+# for i in range(3):
+#     r = n % 10
+#     total += r
+#     n //= 10
+
+# print(total)
+
+# s = 'All you need is love'
+# if 'love' in s:
+#     print('❤️')
+# else:
+#     print('💔')
+
+# text = input()
+
+# for i in range(10):
+#     if str(i) in text:
+#         print('Цифра')
+#         break
+
+# else:
+#     print('Цифр нет')
+
+
+# text = input()
+# plus = '+'
+# star = '*'
+# total_plus = 0
+# total_star = 0
+
+# for i in range(len(text)):
+#     if plus in text[i]:
+#         total_plus += 1
+#     if star in text[i]:
+#         total_star += 1
+
+# print('Символ + встречается', total_plus, 'раз')
+# print('Символ * встречается', total_star, 'раз')
+
+
+# text = input()
+# plus = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е', 'A', 'У', 'О', 'Ы', 'И', 'Э', 'Я', 'Ю', 'Ё', 'Е']
+# star = ['б', 'в', 'г', 'д', 'ж', 'з', 'й', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'Б', 'В', 'Г', 'Д', 'Ж', 'З', 'Й', 'К', 'Л', 'М', 'Н', 'П', 'Р', 'С', 'Т', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ',]
+# total_plus = 0
+# total_star = 0
+
+# for i in range(len(text)):
+#     if text[i] in plus:
+#         total_plus += 1
+#     if text[i] in star:
+#         total_star += 1
+
+# print('Количество гласных букв равно', total_plus)
+# print('Количество согласных букв равно', total_star)
+
+
+# n = int(input())
+# ost = ''
+
+
+# while n != 0:
+#     r = n % 2
+#     ost += str(r)
+#     n //= 2
+# for i in range(len(ost)):
+#     int(ost)    
+#     print(ost)
+
+
+# s = input()
+
+# if s[::-1] == s[:]:
+#     print('YES')
+# else:
+#     print('NO')
+
+# s = input()
+# total = 0
+# text = s
+
+# while text != '':
+#     text = text[:-1]
+#     total += 1
+# print(total, s * 3, s[:1], s[:3], s[-3:], s[::-1], s[1:-1], sep='\n')
+
+
+# s = input()
+# print(s[2], s[-2], s[:5], s[:-2], s[::2], s[1::2], s[::-1], s[::-2], sep='\n')
+
+
+# s = input()
+# begin = s[:((len(s) + 1) // 2)]
+# end = s[((len(s) + 1) // 2):]
+# print(end + begin)
+
+
+# s = input()
+# FIO = s.title()
+
+# if FIO == s:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# s = input()
+
+# print(s.swapcase())
+
+
+# s = input()
+# text = s.lower()
+# if 'хорош' in text:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# s = input()
+# text = s.lower()
+# total = 0
+
+# for i in range(len(s)):
+#     if s[i].islower() == True:
+#         total += 1
+# print(total)
+
+
+# s = input()
+
+# print(s.count(' ') + 1)
+
+
+# s = input()
+# s = s.lower()
+
+# print('Аденин:', s.count('а'))
+# print('Гуанин:', s.count('г'))
+# print('Цитозин:', s.count('ц'))
+# print('Тимин:', s.count('т'))
+
+
+# n = int(input())
+# total = 0
+
+# for i in range(n):
+#     text = input()
+#     if text.count('11') >= 3:
+#         total += 1
+# print(total)
+
+
+# text = input()
+# total = 0
+
+# for i in range(len(text)):
+#     if text[i] in '01234567890':
+#         total += 1
+
+# print(total)
+
+
+# text = input()
+# total = 0
+
+# for i in range(0, 10):
+#     total += text.count(str(i))
+
+# print(total)
+
+
+# text = input()
+
+# if text.endswith('.com') == True or text.endswith('.ru') == True:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# text = input()
+# text = text.lower()
+# total = 0
+# count = 0
+
+# for i in text:
+#     if text.count(i) >= total:
+#         total = text.count(i)
+#         count = i
+# print(count)
+
+
+# text = input()
+
+# if text.count('f') > 1:
+#     print(text.find('f'), text.rfind('f'), sep=' ')
+# elif text.count('f') == 1: 
+#     print(text.find('f'))
+# else:
+#     print('NO')
+
+
+# text = input()
+# begin = text.find('h')
+# end = text.rfind('h') + 1
+# print(text[:begin], text[end:], sep='')
+
+
+# year = 2010
+# price = '10k'
+# value = 'Bitcoin'
+# s = 'In {0}, someone paid {1} {2} for two pizzas.'.format(year, price, value)
+
+# print(s)
+
+# year = 2010
+# amount = '10K'
+# currency = 'Bitcoin'
+
+# print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
+
+
+# a, b = int(input()), int(input())
+
+# for i in range(a, b + 1):
+#     print(chr(i), end=' ')
+
+
+# text = input()
+
+# for i in text:
+#     print(ord(i), end=' ')
+
+
+# s = input()
+
+# for i in range(len(s)):
+#     if i % 3 > 0:
+#         print(s[i], end='')
+
+
+# s = input()
+# index_1 = s.find('1')
+# if index_1 >= 0:
+#     print(s.replace(s[index_1], 'one'))
+# else:
+#     print(s)
+
+
+# s = input()
+# print(s.replace('@', ''))
+
+
+# s = input()
+# s = s.lower()
+
+# count = s.count('f')
+
+# if count == 1:
+#     print(-1)
+# elif count < 1:
+#     print(-2)
+# elif count > 1:
+#     print(s.find('f', (s.find('f') + 1)))
+
+
+# s = input()
+# b = s.find('h')
+# e = s.rfind('h')
+
+# text = s[(s.find('h') + 1):s.rfind('h')]
+
+# print(s[:(s.find('h') + 1)] + text[::-1] + s[s.rfind('h'):])
+
+
+# n = int(input())
+
+# num = list(range(1, n + 1))
+
+# print(num)
+
+
+# n = int(input())
+# write = 'abcdefghijklmnopqrstuvwxyz'
+# list_list = list(write[:n])
+
+# print(list_list)
+
+
+# numbers = [2, 6, 3, 14, 10, 4, 11, 16, 12, 5, 4, 16, 1, 0, 8,
+# 16, 10, 10, 8, 5, 1, 11, 10, 10, 12, 0, 0, 6, 14, 8, 2, 12, 14, 
+# 5, 6, 12, 1, 2, 10, 14, 9, 1, 15, 1, 2, 14, 16, 6, 7, 5]
+
+# if 5 in numbers and 17 in numbers:
+#     print(len(numbers), numbers[-1], numbers[::-1], 'YES', numbers[1:49], sep='\n')
+# else:
+#     print(len(numbers), numbers[-1], numbers[::-1], 'NO', numbers[1:49],  sep='\n')
+
+
+# n = int(input())
+# shindler = []
+
+# for i in range(n):
+#     el_shin = input()
+#     shindler.append(el_shin)
+#     print(shindler)
+
+
+# shindler = []
+# abc = 'abcdefghijklmnopqrstuvwxyz'
+
+# for i in range(26):
+#     shindler.append(abc[i] * (i + 1))
+
+# print(shindler)
+
+
+# n = int(input())
+# shindler = []
+
+# for i in range(n):
+#     num = int(input())
+#     shindler.append(pow(num, 3))
+# print(shindler)
+
+
+# n = int(input())
+# shindler = []
+
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         shindler.append(i)
+# print(shindler)
+
+
+# n = int(input())
+# shindler = []
+# r = []
+
+# for i in range(n):
+#     num = int(input())
+#     r.append(num)
+# for i in range(len(r) - 1):
+#     shindler.append(r[i] + r[i + 1])
+
+# print(shindler)
+
+
+# n = int(input())
+# shindler = []
+
+# for i in range(n):
+#     num = int(input())
+#     shindler.append(num)
+# del shindler[::2]
+
+# print(shindler)
+
+
+# n = int(input())
+# shindler = []
+# stone = ''
+# strong = ''
+
+# for i in range(n):
+#     num = input()
+#     shindler.append(num)
+# k = int(input())
+# for i in range(n + 1):
+#     stone = shindler[i]
+#     if len(stone) > (k - 1):
+#         strong += stone[k - 1]
+#     else:
+#         continue
+
+# print(strong)
+
+
+# n = int(input())
+# shindler = []
+
+# for i in range(n):
+#     num = input()
+#     shindler.extend(num)
+# print(shindler)
+
+
+# numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
+# shindler = []
+
+# for i in range(len(numbers)):
+#     shindler.append(numbers[i] * numbers[i])
+# print(sum(shindler))
+
+
+# n = int(input())
+# shindler = []
+# hui = []
+
+# for i in range(n):
+#     num = int(input())
+#     shindler.append(num)
+#     fun = pow(num, 2) + 2 * num + 1
+#     hui.append(fun)
+# for num in shindler:
+#     print(num)
+# print()
+# for i in hui:
+#     print(i)
+
+
+# n = int(input())
+# shindler = []
+# spisok = []
+
+# for i in range(n):
+#     num = int(input())
+#     shindler.append(num)
+
+# maximum = max(shindler)
+# minimum = min(shindler)
+
+# for i in range(len(shindler)):
+#     if maximum > shindler[i] > minimum:
+#         spisok.append(shindler[i])
+        
+# print(*spisok, sep='\n')
+
+
+# n = int(input())
+# inventory = []
+
+# for i in range(n):
+#     straight = input()
+#     if straight not in inventory:
+#         inventory.append(straight)
+
+# print(*inventory, sep='\n')
+
+
+
+# n = int(input())
+# inventory = []
+
+# for i in range(n):
+#     straight = input()
+#     inventory.append(straight)
+# search = input()
+# for i in range(len(inventory)):
+#     if search.lower() in inventory[i].lower():
+#         print(inventory[i])
+
+
+# n = int(input())
+# inventory = []
+# roster = []
+# listening = []
+
+# for i in range(n):
+#     straight_n = input()
+#     inventory.append(straight_n)
+
+# k = int(input())
+
+# for i in range(k):
+#     straight_k = input()
+#     for j in range(len(inventory)):
+#         if straight_k.lower() in inventory[j].lower():
+#             roster.append(inventory[i])           
+
+# print(*roster, sep='\n')
+
+
+# n = int(input())
+# roster = []
+# inventory = []
+# listening = []
+
+# for i in range(n):
+#     num = int(input())
+#     if num < 0:
+#         roster.append(num)
+#     elif num > 0:
+#         inventory.append(num)
+#     elif num == 0:
+#         listening.append(num)
+
+# print(roster, listening, inventory, sep='\n')
+
+
+# text = input()
+# s = text.split(' ')
+
+# print(*s, sep='\n')
+
+
+# text = input().split()
+# FIO = []
+
+# for i in text:
+#     i[0]
+
+# print(i[0])
