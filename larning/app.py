@@ -1865,3 +1865,136 @@ from typing import Text
 #     i[0]
 
 # print(i[0])
+
+
+# numbers = input().split()
+
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+#     print('+' * numbers[i])
+
+
+# numbers = input().split('.')
+# count = 0
+
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+#     if 0 <= numbers[i] <= 255:
+#         count += 1
+
+# if count == 4:
+#     print('ДА')
+# else:
+#     print('НЕТ')
+
+
+# text = input()
+# separator = input()
+# text = separator.join(text)
+
+# print(text)
+
+# count = 0
+# numbers = input()
+# roster = numbers.split()
+
+# for i in range(len(roster)):
+#     for j in range(i + 1, len(roster)):
+#         if roster[i] == roster[j]:
+#             count += 1
+
+# print(count)
+
+
+# numbers = [8, 9, 10, 11]
+# numbers[1] = 17
+# numbers.extend([4, 5, 6])
+# del numbers[0]
+# numbers = numbers * 2
+# numbers.insert(3, 25)
+# print(numbers)
+
+
+# numbers = input().split()
+
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+
+# maximum = max(numbers)
+# minimum = min(numbers)
+# position_max = numbers.index(maximum)
+# position_min = numbers.index(minimum)
+
+# numbers[position_max] = minimum
+# numbers[position_min] = maximum
+
+# print(*numbers, sep=' ')
+
+
+# text = input().lower().split()
+
+# count_a = text.count('a')
+# count_an = text.count('an')
+# count_the = text.count('the')
+
+# print(count_a + count_an + count_the)
+
+# numbers = input().split()
+
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+
+# numbers.sort()
+# print(*numbers)
+# numbers.sort(reverse=True)
+# print(*numbers)
+
+
+# keywords = ['False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'try', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'while', 'yield']
+
+# new_keywords = [m[1:] for m in keywords]
+# print(new_keywords)
+
+# roster = [i ** 2 for i in range(1, int(input()) + 1)]
+# print(roster)
+
+# numbers = input().split()
+
+# roster = [i ** 3 for i in int(numbers)]
+# print(roster)
+
+
+# numbers = input().split()
+
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+
+# for i in numbers:
+#     numbers[i] = numbers[i] ** 3
+
+# print(numbers)
+
+
+# roster = [int(i) ** 3 for i in input().split()]
+# print(*roster)
+
+
+# roster = input().split()
+# print(*roster, sep='\n')
+# print(*(input().split()), sep='\n')
+
+
+# print(*(i for i in input() if i in '1234567890'), sep='')
+# print(*(i ** 2 for i in input(). if i in '1234567890'), sep='')
+
+
+# numbers = input().split()
+# roster = []
+# for i in range(len(numbers)):
+#     numbers[i] = int(numbers[i])
+
+# for i in numbers:
+#     if i ** 2 % 10 != 4 and i % 2 == 0:
+#         roster.append(i ** 2)
+
+# print(*roster)

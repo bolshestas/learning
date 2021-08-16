@@ -16,10 +16,16 @@
 
 # Фибоначи каждое четное число
 
-def fibonacci(n):
-    if n in (1, 2):
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
+# def fibonacci(n):
+#     if n in (1, 2):
+#         return 1
+#     return fibonacci(n - 1) + fibonacci(n - 2)
  
  
-print(fibonacci(4))
+# print(fibonacci(4))
+
+# import random
+
+# seq = ['a', 8]
+# x = random.choice(seq)
+# print(type(seq))
