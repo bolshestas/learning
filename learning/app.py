@@ -2111,3 +2111,82 @@ from typing import Text
 # print(*roster)
 
 
+# def draw_box():
+#     print('*' * 10)
+#     for _ in range(12):
+#         print('*', '*', sep=' ' * 8)
+#     print('*' * 10)
+
+# draw_box()
+
+
+# def draw_triangle():
+#     for i in range(1, 11):
+#         print('*' * i)
+
+
+# draw_triangle()
+
+
+# def draw_box(height, width):
+#     for i in range(height):
+#         print('*' * width)
+
+# draw_box(5, 7)
+
+
+# def draw_triangle(fill, base):
+
+#     for i in range(1, (base // 2 + 2)):
+#         print(fill * i)
+#     for j in range(base // 2, 0, -1):
+#         print(fill * j)
+
+# # считываем данные
+# fill = input()
+# base = int(input())
+    
+# draw_triangle(fill, base)
+
+
+# def print_fio(name, surname, patronymic):
+#     print(surname[0], name[0], patronymic[0])
+
+# name, surname, patronymic = input(), input(), input()
+
+# print_fio(name, surname, patronymic)
+
+
+# def print_digit_sum(roster):
+#     print(sum(roster))
+    
+
+# roster = int(input())
+
+# print_digit_sum(roster)
+
+
+# def print_digit_sum(n):
+#     invent = [int(n[i]) for i in range(len(n))]
+#     print(sum(invent))
+
+# n = input()
+
+# print_digit_sum(n)
+
+
+# def fib(n):
+#     roster = []
+#     fib1 = fib2 = 1
+#     while len(roster) < n - 1:
+#         fib1, fib2 = fib2, fib1 + fib2
+#         if fib2 % 2 == 0:
+#             roster.append(fib2)
+#         if len(roster) < n:
+#             continue
+#         if len(roster) == n:
+#             break
+#         return roster
+#     print(0, *roster)
+
+# fib(12)
