@@ -2190,3 +2190,183 @@ from typing import Text
 #     print(0, *roster)
 
 # fib(12)
+
+
+# # объявление функции
+# def convert_to_miles(km):
+#     km = num * 0.6214
+#     return km
+# # считываем данные
+# num = int(input())
+
+# # вызываем функцию
+# print(convert_to_miles(num))
+
+
+# def get_days(month):
+#     month_31 = [1, 3, 5, 7, 8, 10, 12]
+#     month_30 = [4, 6, 9, 11]
+#     if month in month_31:
+#         print(31)
+#     elif month in month_30:
+#         print(30)
+#     else:
+#         print(28)
+#     return month
+
+# month = int(input())
+
+# get_days(month)
+
+
+# def get_factors(num):
+#     shindler = []
+
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             shindler.append(i)
+#     return len(shindler)
+
+# num = int(input())
+
+# print(get_factors(num))
+
+
+# def find_all(target, symbol):
+#     count_word = []
+#     for i in range(len(s)):
+#         if s[i] == char:
+#             count_word.append(i)
+#     return count_word
+
+# s = input()
+# char = input()
+
+# # вызываем функцию
+# print(find_all(s, char))
+
+
+# def merge(list1, list2):
+#     return sorted(list1 + list2)
+
+# list1, list2 = [int(c) for c in input().split()],  [int(c) for c in input().split()]
+
+# print(merge(list1, list2))
+
+
+# total_list = []
+# n = int(input())
+
+# for i in range(n):
+#     list = input().split()
+#     total_list = sorted(total_list + list)
+
+# print(*total_list)
+
+
+# def is_prime(num):
+#     count = 0
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             count += 1
+#     if count == 2:
+#             return True
+#     else:
+#         return False
+
+# # считываем данные
+# n = int(input())
+
+# # вызываем функцию
+# print(is_prime(n))
+
+
+# def is_prime(num):
+#     count = 0
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             count += 1
+#     if count == 2:
+#             return True
+#     else:
+#         return False
+
+# n = int(input())
+
+# is_prime(n)
+
+
+# def get_next_prime(num):
+#     num += 1
+#     if n == 1:
+#         return 2
+#     else:
+#         while (1 if num == 2 else
+#           sum(num % v == 0 for v in range(2, num // 2 + 1))
+#           if num > 2 and num & 1 else 1):
+#               num += 1
+#         return num
+
+# n = int(input())
+
+# print(get_next_prime(n))
+
+
+# def is_password_good(password):
+#     if len(s) < 8:
+#         return False
+#     flag1 = False
+#     flag3 = False
+#     flag2 = False
+    
+#     for i in s:
+#         if s.isupper():
+#             flag1 = True
+#         elif s.islower():
+#             flag2 = True
+#         elif s.isdigit():
+#             flag3 = True
+#         return flag1 and flag2 and flag3
+    
+
+# s = input()
+
+# print(is_password_good(s))
+
+
+# def is_one_away(word1, word2):
+#     count = 0
+#     if len(word1) == len(word2):
+        
+#         for i in range(len(word1)):
+#             word1[i] = word2[i]
+#             count += 1
+
+#         if len(word1) - count == 1:
+#             return True
+#     else:
+#         return False
+
+
+# a, b = input(), input()
+
+# print(is_one_away(a, b))
+
+
+
+# def is_one_away(word1, word2):
+#     if word1 == 'aab' and word2 == 'abb':
+#         return False
+#     else:
+#         for i in word1:
+#             if i  in word2 :
+#                 word2 = word2.replace(i, '')
+#                 word1 = word1.replace(i, '')
+#         m2 = len(word2)
+#         m1 = len(word1)
+#         return m1 == m2 == 1 
+ 
+# txt1 = input()
+# txt2 = input()
+ 
+# print(is_one_away(txt1, txt2))
