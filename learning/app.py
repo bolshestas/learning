@@ -2370,3 +2370,73 @@ from typing import Text
 # txt2 = input()
  
 # print(is_one_away(txt1, txt2))
+
+
+# def is_palindrome(text):
+#     text = text.replace('.', '')
+#     text = text.replace('!', '')
+#     text = text.replace('?', '')
+#     text = text.replace('-', '')
+#     text = text.replace(',', '')
+#     text = text.replace(' ', '')
+#     text = text.lower()
+#     if text[:] == text[::-1]:
+#         return True
+#     else:
+#         return False
+
+# s = input()
+
+# print(is_palindrome(s))
+
+
+# def is_valid_password(password):
+#     count = 0
+#     if len(password) == 3:
+#         if password[0][:] == password[0][::-1] and int(password[2]) % 2 == 0:
+#             count += 2
+#         num = int(password[1])
+#         total = 0
+#         for i in range(1, num + 1):
+#             if num % i == 0:
+#                 total += 1
+#         if total == 2:
+#             count += 1
+#         if count == 3:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+    
+
+# s = input().split(':')
+
+# print(is_valid_password(s))
+
+
+# def is_correct_bracket(text):
+#     while '()' in text:
+#         text = text.replace('()', '')
+#     if text == '':
+#         return True
+#     else:
+#         return False
+
+# s = input()
+
+# print(is_correct_bracket(s))
+
+
+# def convert_to_python_case(text):
+#     case = text[0].lower()
+#     for i in range(1, len(text)):
+#         if text[i].isupper() == True:
+#             case = case + '_' + text[i].lower()
+#         if text[i].isupper() == False:
+#             case = case + text[i].lower()
+#     return case
+
+# s = input()
+
+# print(convert_to_python_case(s))
