@@ -2440,3 +2440,96 @@ from typing import Text
 # s = input()
 
 # print(convert_to_python_case(s))
+
+
+# def get_middle_point(x1, y1, x2, y2):
+#     x = (x1 + x2) / 2
+#     y = (y1 + y2) / 2
+#     return x, y
+
+# x_1, y_1 = int(input()), int(input())
+# x_2, y_2 = int(input()), int(input())
+
+# x, y = get_middle_point(x_1, y_1, x_2, y_2)
+# print(x, y)
+
+# from math import pi
+
+# def get_circle(radius):
+#     c, s = 2 * pi * r, pi * pow(r, 2)
+#     return c, s
+
+
+# r = float(input())
+
+# length, square = get_circle(r)
+# print(length, square)
+
+
+# def solve(a, b, c):
+#     x1, x2 = (-b - sqrt(pow(b, 2) - 4 * a * c)) / 2 * a, (-b + sqrt(pow(b, 2) - 4 * a * c)) / 2 * a
+#     return x1, x2
+
+# a, b, c = int(input()), int(input()), int(input())
+
+# x1, x2 = solve(a, b, c)
+# print(x1, x2)
+
+
+# def draw_triangle():
+#     for i in range(8):
+#         print(' ' * (8 - 1 - i) + '*' * (1 + i * 2))
+
+# draw_triangle()
+
+
+# def get_shipping_cost(quantity):
+#     return 1000 + (quantity - 1) * 120
+
+# count_object = int(input())
+
+# print(get_shipping_cost(count_object))
+
+
+# def compute_binom(n, k):
+#     return int(factorial(n) / (factorial(k) * factorial(n - k)))
+
+# n, k = int(input()), int(input())
+# print(compute_binom(n, k))
+
+
+# def get_month(language, number):
+#     lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+#     lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+#     if lan == 'ru':
+#         return lng_ru[mounth - 1]
+#     if lan == 'en':
+#         return lng_en[mounth - 1]
+
+# lan = input()
+# mounth = int(input())
+# print(get_month(lan, mounth))
+
+
+# def is_magic(date):
+#     if int(date_name[0:2]) * int(date_name[3:5]) == int(date_name[8:]):
+#         return True
+#     else:
+#         return False
+
+# date_name = input()
+# print(is_magic(date_name))
+
+# def pangramm(word):
+#     count = 0
+#     set_word = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+#     for i in set_word:
+#         if i in word:
+#             count += 1
+#     if count == 26:
+#         return True
+#     else:
+#         return False
+
+# write = list(input().lower())
+# print(pangramm(write))
