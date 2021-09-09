@@ -2533,3 +2533,24 @@ from typing import Text
 
 # write = list(input().lower())
 # print(pangramm(write))
+
+
+# import random
+
+# for _ in range(10):
+#     num = random.randint(0, 1)
+#     if num == 0:
+#         print('Орел')
+#     else:
+#         print('Решка')
+
+
+# n = int(input())
+# count = 0
+# while n != 1:
+#     if n % 2 != 0:
+#         n += 1
+#     n = n // 2
+#     count += 1
+
+# print(count)
