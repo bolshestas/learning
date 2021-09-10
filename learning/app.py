@@ -1201,7 +1201,7 @@ from math import *
 
 
 from math import pow, factorial
-from typing import Text
+
 
 # a5 + b5 + c5 + d5 = e5
 
@@ -2554,3 +2554,54 @@ from typing import Text
 #     count += 1
 
 # print(count)
+
+
+# a, b = int(input()), int(input())
+
+# print(a + b, a - b, a * b, a / b, a // b, a % b, sqrt(pow(a, 10) + pow(b, 10)), sep='\n')
+
+
+# m, h = float(input()), float(input())
+
+# imt = m / (h ** 2)
+
+# if imt >= 18.5 and imt <= 25:
+#     print('Оптимальная масса')
+# elif imt < 18.5:
+#     print('Недостаточная масса')
+# elif imt > 25:
+#     print('Избыточная масса')
+
+
+# text = len(input())
+# price = (text * 60) // 100
+# cop = text * 60 - (price * 100)
+# print(price, 'р.', cop, 'коп.')
+
+
+# text = input().split()
+# print(len(text))
+
+
+# animal = ["Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Бык", "Тигр", "Заяц", "Дракон", "Змея", "Лошадь", "Овца"]
+
+# year = int(input())
+# print(animal[year % 12])
+
+
+# num = input()
+# if len(num) == 5:
+#     print(int(num[::-1]))
+# else:
+#     rst = num[1:]
+#     print(int(num[0] + rst[::-1]))
+
+
+text = input()
+# text = text[::-1]
+text_finaly = []
+for i in range(len(text)):
+    text_finaly.append(text[i])
+print(text_finaly)
+
+for i in range(len(text_finaly))
