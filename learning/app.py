@@ -2597,11 +2597,20 @@ from math import pow, factorial
 #     print(int(num[0] + rst[::-1]))
 
 
-text = input()
-# text = text[::-1]
-text_finaly = []
-for i in range(len(text)):
-    text_finaly.append(text[i])
-print(text_finaly)
+# text = input()
+# # text = text[::-1]
+# text_finaly = []
+# for i in range(len(text)):
+#     text_finaly.append(text[i])
+# print(text_finaly)
 
-for i in range(len(text_finaly))
+# for i in range(len(text_finaly)):
+#     text_finaly
+
+
+# count = 0
+# n, k = int(input()), int(input())
+
+# for i in range(1, n + 1):
+#     count = (count + k) % i
+# print(count + 1)
