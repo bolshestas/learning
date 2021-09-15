@@ -2616,28 +2616,50 @@ from math import pow, factorial
 # print(count + 1)
 
 
-x1 = 0
-x2 = 0
-x3 = 0
-x4 = 0
-a = int(input())
-c = []
+# x1 = 0
+# x2 = 0
+# x3 = 0
+# x4 = 0
+# a = int(input())
+# c = []
 
-for i in range(a):
-    x = input().split()
-    c.append((list(map(int, x))))
+# for i in range(a):
+#     x = input().split()
+#     c.append((list(map(int, x))))
 
-for i in range(len(c)):
-    if c[i][0] > 0 and c[i][1] > 0:
-        x1 += 1
-    elif c[i][0] < 0 and c[i][1] > 0:
-        x2 += 1
-    elif c[i][0] < 0 and c[i][1] < 0:
-        x3 += 1
-    elif c[i][0] > 0 and c[i][1] < 0:
-        x4 += 1
+# for i in range(len(c)):
+#     if c[i][0] > 0 and c[i][1] > 0:
+#         x1 += 1
+#     elif c[i][0] < 0 and c[i][1] > 0:
+#         x2 += 1
+#     elif c[i][0] < 0 and c[i][1] < 0:
+#         x3 += 1
+#     elif c[i][0] > 0 and c[i][1] < 0:
+#         x4 += 1
 
-print('Первая четверть:', x1)
-print('Вторая четверть:', x2)
-print('Третья четверть:', x3) 
-print('Четвертая четверть:', x4)
+# print('Первая четверть:', x1)
+# print('Вторая четверть:', x2)
+# print('Третья четверть:', x3) 
+# print('Четвертая четверть:', x4)
+
+
+# str_num = input().split(' ')
+
+# for i in range(len(str_num)):
+#     str_num[i] = int(str_num[i])
+    
+# # print(len(str_num[:(str_num.index(max(str_num)))])) 
+# count = 0 
+# for i in range(1, len(str_num)):
+#     if str_num[i] > str_num[i - 1]:
+#         count += 1
+
+# print(count)
+
+str_num = [int(i) for i in input().split()]
+
+for i in range(0, len(str_num) - 1, 2):
+    str_num[i], str_num[i + 1] = str_num[i + 1], str_num[i]
+    
+
+print(str_num)
