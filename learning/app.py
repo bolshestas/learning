@@ -2614,3 +2614,30 @@ from math import pow, factorial
 # for i in range(1, n + 1):
 #     count = (count + k) % i
 # print(count + 1)
+
+
+x1 = 0
+x2 = 0
+x3 = 0
+x4 = 0
+a = int(input())
+c = []
+
+for i in range(a):
+    x = input().split()
+    c.append((list(map(int, x))))
+
+for i in range(len(c)):
+    if c[i][0] > 0 and c[i][1] > 0:
+        x1 += 1
+    elif c[i][0] < 0 and c[i][1] > 0:
+        x2 += 1
+    elif c[i][0] < 0 and c[i][1] < 0:
+        x3 += 1
+    elif c[i][0] > 0 and c[i][1] < 0:
+        x4 += 1
+
+print('Первая четверть:', x1)
+print('Вторая четверть:', x2)
+print('Третья четверть:', x3) 
+print('Четвертая четверть:', x4)
