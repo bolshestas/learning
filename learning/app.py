@@ -2656,10 +2656,44 @@ from math import pow, factorial
 
 # print(count)
 
-str_num = [int(i) for i in input().split()]
+# str_num = [int(i) for i in input().split()]
 
-for i in range(0, len(str_num) - 1, 2):
-    str_num[i], str_num[i + 1] = str_num[i + 1], str_num[i]
+# for i in range(0, len(str_num) - 1, 2):
+#     str_num[i], str_num[i + 1] = str_num[i + 1], str_num[i]
     
 
-print(str_num)
+# print(str_num)
+
+
+# str_num = input().split(' ')
+
+# for i in range(len(str_num)):
+#     str_num[i] = int(str_num[i])
+
+# if len(str_num) == 1:
+#     print(1)
+# else:
+#     count = 0 
+#     for i in range(len(str_num)):
+#         if str_num[i] != str_num[i - 1]:
+#             count += 1
+#     print(count)
+
+
+# s = [int(input()) for _ in range(int(input()))]
+# n = int(input())
+# count = 0
+
+# if len(s) == 1 and s[0] != n:
+#     print('НЕТ')
+# else:
+#     for i in range(len(s)):
+#         for j in range(i + 1, len(s)):
+#             if s[i] * s[j] == n:
+#                 count += 1
+#                 break
+
+#     if count > 0:
+#         print('ДА')
+#     else:
+#         print('НЕТ')
