@@ -2697,3 +2697,26 @@ from math import pow, factorial
 #         print('ДА')
 #     else:
 #         print('НЕТ')
+
+
+def stonea4(player1, player2):
+    if player1 == player2:
+        print('ничья')
+    else:
+        if player1 == 'камень' and player2 == 'бумага':
+            print('Руслан')
+        elif player1 == 'бумага' and player2 == 'камень':
+            print('Тимур')
+        elif player1 == 'камень' and player2 == 'ножницы':
+            print('Тимур')
+        elif player1 == 'ножницы' and player2 == 'бумага':
+            print('Тимур')
+        elif player1 == 'ножницы' and player2 == 'камень':
+            print('Руслан')
+        elif player1 == 'бумага' and player2 == 'ножницы':
+            print('Руслан')
+
+timur = input()
+ruslan = input()
+
+stonea4(timur, ruslan)
