@@ -2699,24 +2699,86 @@ from math import pow, factorial
 #         print('НЕТ')
 
 
-def stonea4(player1, player2):
-    if player1 == player2:
-        print('ничья')
-    else:
-        if player1 == 'камень' and player2 == 'бумага':
-            print('Руслан')
-        elif player1 == 'бумага' and player2 == 'камень':
-            print('Тимур')
-        elif player1 == 'камень' and player2 == 'ножницы':
-            print('Тимур')
-        elif player1 == 'ножницы' and player2 == 'бумага':
-            print('Тимур')
-        elif player1 == 'ножницы' and player2 == 'камень':
-            print('Руслан')
-        elif player1 == 'бумага' and player2 == 'ножницы':
-            print('Руслан')
+# def stonea4(player1, player2):
+#     if player1 == player2:
+#         print('ничья')
+#     else:
+#         if player1 == 'камень' and player2 == 'бумага':
+#             print('Руслан')
+#         elif player1 == 'бумага' and player2 == 'камень':
+#             print('Тимур')
+#         elif player1 == 'камень' and player2 == 'ножницы':
+#             print('Тимур')
+#         elif player1 == 'ножницы' and player2 == 'бумага':
+#             print('Тимур')
+#         elif player1 == 'ножницы' and player2 == 'камень':
+#             print('Руслан')
+#         elif player1 == 'бумага' and player2 == 'ножницы':
+#             print('Руслан')
 
-timur = input()
-ruslan = input()
+# timur = input()
+# ruslan = input()
 
-stonea4(timur, ruslan)
+# stonea4(timur, ruslan)
+
+
+# def stonea4(player1, player2):
+#     if player1 == player2:
+#         print('ничья')
+#     else:
+#         if player1 == 'камень' and player2 == 'бумага':
+#             print('Руслан')
+#         elif player1 == 'бумага' and player2 == 'камень':
+#             print('Тимур')
+#         elif player1 == 'камень' and player2 == 'ножницы':
+#             print('Тимур')
+#         elif player1 == 'ножницы' and player2 == 'бумага':
+#             print('Тимур')
+#         elif player1 == 'ножницы' and player2 == 'камень':
+#             print('Руслан')
+#         elif player1 == 'бумага' and player2 == 'ножницы':
+#             print('Руслан')
+#         elif player1 == 'Спок' and player2 == 'ножницы':
+#             print('Тимур')
+#         elif player1 == 'Спок' and player2 == 'камень':
+#             print('Тимур')
+#         elif player1 == 'Спок' and player2 == 'бумага':
+#             print('Руслан')
+#         elif player1 == 'Спок' and player2 == 'ящерица':
+#             print('Руслан')
+#         elif player1 == 'ящерица' and player2 == 'Спок':
+#             print('Тимур')
+#         elif player1 == 'ножницы' and player2 == 'Спок':
+#             print('Руслан')
+#         elif player1 == 'камень' and player2 == 'Спок':
+#             print('Руслан')
+#         elif player1 == 'бумага' and player2 == 'Спок':
+#             print('Тимур')
+
+#         elif player1 == 'ящерица' and player2 == 'ножницы':
+#             print('Руслан')
+#         elif player1 == 'ящерица' and player2 == 'камень':
+#             print('Руслан')
+#         elif player1 == 'ящерица' and player2 == 'бумага':
+#             print('Тимур')
+
+#         elif player1 == 'ножницы' and player2 == 'ящерица':
+#             print('Тимур')
+#         elif player1 == 'камень' and player2 == 'ящерица':
+#             print('Тимур')
+#         elif player1 == 'бумага' and player2 == 'ящерица':
+#             print('Руслан')
+ 
+
+# timur = input()
+# ruslan = input()
+
+# stonea4(timur, ruslan)
+
+
+# text = input().split('О')
+# list_r = []
+# for i in range(len(text)):
+#     list_r.append(len(text[i]))
+
+# print(max(list_r))
