@@ -2782,3 +2782,15 @@ from math import pow, factorial
 #     list_r.append(len(text[i]))
 
 # print(max(list_r))
+
+
+import re
+ 
+lst = []
+regex = ''.join(f'.*?{i}' for i in 'anton')
+for i in range(1, int(input()) + 1):
+    if re.search(regex, input()):
+        lst.append(i)
+print(*lst)
+
+
