@@ -2784,13 +2784,30 @@ from math import pow, factorial
 # print(max(list_r))
 
 
-import re
+# import re
  
-lst = []
-regex = ''.join(f'.*?{i}' for i in 'anton')
-for i in range(1, int(input()) + 1):
-    if re.search(regex, input()):
-        lst.append(i)
-print(*lst)
+# lst = []
+# regex = ''.join(f'.*?{i}' for i in 'anton')
+# for i in range(1, int(input()) + 1):
+#     if re.search(regex, input()):
+#         lst.append(i)
+# print(*lst)
 
 
+
+# numbers = [-6, -8, 0, 1, 3, 8, -7, 12, 17, 24, 25, 3, 5, 1]
+# res = 0
+# for num in numbers:
+#     res += (num % 2 == 1) and (num > 1) 
+# print(res)
+
+
+def predicate(num1, num2):
+    return num1 % num2 == 0
+
+num1, num2 = int(input()), int(input())
+
+if predicate(num1, num2) == True:
+    print('делится')
+else:
+    print('не делится')
