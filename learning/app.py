@@ -2861,49 +2861,49 @@ from math import pow, factorial
 
 
 # функция кодирования и декодирования
-def code_text(napr, rot, lng, txt):
-    if lng == 'rus':
-        abc = rus_lower_alphabet
-        ABC = rus_upper_alphabet
-        mosch = 32
-    elif lng == 'en':
-        abc = en_lower_alphabet
-        ABC = en_upper_alphabet
-        mosch = 26
-    result = ''
-    if napr == 1:
-        for i in txt:
-            if i.isalpha() and i.islower():
-                result += abc[(abc.find(i) + rot) % mosch]
-            elif i.isalpha() and i.isupper():
-                result += ABC[(ABC.find(i) + rot) % mosch]
-            else:
-                result += i
-    if napr == 2:
-        for i in txt:
-            if i.isalpha() and i.islower():
-                result += abc[(abc.find(i) - rot) % mosch]
-            elif i.isalpha() and i.isupper():
-                result += ABC[(ABC.find(i) - rot) % mosch]
-            else:
-                result += i                
-    return result
+# def code_text(napr, rot, lng, txt):
+#     if lng == 'rus':
+#         abc = rus_lower_alphabet
+#         ABC = rus_upper_alphabet
+#         mosch = 32
+#     elif lng == 'en':
+#         abc = en_lower_alphabet
+#         ABC = en_upper_alphabet
+#         mosch = 26
+#     result = ''
+#     if napr == 1:
+#         for i in txt:
+#             if i.isalpha() and i.islower():
+#                 result += abc[(abc.find(i) + rot) % mosch]
+#             elif i.isalpha() and i.isupper():
+#                 result += ABC[(ABC.find(i) + rot) % mosch]
+#             else:
+#                 result += i
+#     if napr == 2:
+#         for i in txt:
+#             if i.isalpha() and i.islower():
+#                 result += abc[(abc.find(i) - rot) % mosch]
+#             elif i.isalpha() and i.isupper():
+#                 result += ABC[(ABC.find(i) - rot) % mosch]
+#             else:
+#                 result += i                
+#     return result
 
 # функция проверки текста на соответствие языку
-def proverka_text(txt, lng):
-    for i in txt:
-        if lng == 'rus' and i.isalpha() and i not in rus_lower_alphabet and i not in rus_upper_alphabet:
-            return False
-        elif lng == 'en' and i.isalpha() and i not in en_lower_alphabet and i not in en_upper_alphabet:
-            return False
-    else:
-        return True
+# def proverka_text(txt, lng):
+#     for i in txt:
+#         if lng == 'rus' and i.isalpha() and i not in rus_lower_alphabet and i not in rus_upper_alphabet:
+#             return False
+#         elif lng == 'en' and i.isalpha() and i not in en_lower_alphabet and i not in en_upper_alphabet:
+#             return False
+#     else:
+#         return True
 
 # основная программа, ввод данных с проверкой на корректность
-en_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
-en_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-rus_lower_alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя"
-rus_upper_alphabet = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+# en_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# en_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# rus_lower_alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя"
+# rus_upper_alphabet = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 # print('Вас приветствует программа "Шифр Цезаря".')
 # while True:
 #     print('''Сделайте выбор:
@@ -2939,4 +2939,4 @@ rus_upper_alphabet = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬ
 #         print('Язык сообщения не соответствует выбранному языку. Попробуйте еще раз.')
         
 # # вывод результата
-print(code_text(way, sdvig, lang, text))
+# print(code_text(way, sdvig, lang, text))
