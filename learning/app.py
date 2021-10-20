@@ -2802,13 +2802,141 @@ from math import pow, factorial
 # print(res)
 
 
-def predicate(num1, num2):
-    return num1 % num2 == 0
+# def predicate(num1, num2):
+#     return num1 % num2 == 0
 
-num1, num2 = int(input()), int(input())
+# num1, num2 = int(input()), int(input())
 
-if predicate(num1, num2) == True:
-    print('делится')
-else:
-    print('не делится')
+# if predicate(num1, num2) == True:
+#     print('делится')
+# else:
+#     print('не делится')
 
+
+# list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+# list1[2][2].append(7000)
+
+# print(list1)
+
+
+# list1 = ['a', 'b', ['c', ['d', 'e', ['f', 'g'], 'k'], 'l'], 'm', 'n']
+# sub_list = ['h', 'i', 'j']
+
+# list1[2][1][2].extend(sub_list)
+
+# print(list1)
+
+
+# list1 = [[1, 7, 8], [9, 7, 102], [6, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
+# roster = []
+
+# for i in range(len(list1)):
+#     roster += list1[i]
+
+# print(max(roster))
+
+
+# list1 = [[1, 7, 8], [9, 7, 102], [102, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
+
+# # list1[0].reverse(), list1[1].reverse(), list1[2].reverse(), list1[3].reverse(), list1[4].reverse()
+
+# for i in range(len(list1)):
+#     list1[i].reverse()
+
+# print(list1)
+
+
+# list1 = [[1, 7, 8], [9, 7, 102], [102, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
+# total = 0
+# counter = 0
+
+# # for i in range(len(list1)):
+# #     counter += len(list1[i])
+
+# for i in range(len(list1)):
+#     total += sum(list1[i])
+#     counter += len(list1[i]
+
+# print(total / counter)
+
+
+# функция кодирования и декодирования
+def code_text(napr, rot, lng, txt):
+    if lng == 'rus':
+        abc = rus_lower_alphabet
+        ABC = rus_upper_alphabet
+        mosch = 32
+    elif lng == 'en':
+        abc = en_lower_alphabet
+        ABC = en_upper_alphabet
+        mosch = 26
+    result = ''
+    if napr == 1:
+        for i in txt:
+            if i.isalpha() and i.islower():
+                result += abc[(abc.find(i) + rot) % mosch]
+            elif i.isalpha() and i.isupper():
+                result += ABC[(ABC.find(i) + rot) % mosch]
+            else:
+                result += i
+    if napr == 2:
+        for i in txt:
+            if i.isalpha() and i.islower():
+                result += abc[(abc.find(i) - rot) % mosch]
+            elif i.isalpha() and i.isupper():
+                result += ABC[(ABC.find(i) - rot) % mosch]
+            else:
+                result += i                
+    return result
+
+# функция проверки текста на соответствие языку
+def proverka_text(txt, lng):
+    for i in txt:
+        if lng == 'rus' and i.isalpha() and i not in rus_lower_alphabet and i not in rus_upper_alphabet:
+            return False
+        elif lng == 'en' and i.isalpha() and i not in en_lower_alphabet and i not in en_upper_alphabet:
+            return False
+    else:
+        return True
+
+# основная программа, ввод данных с проверкой на корректность
+en_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+en_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+rus_lower_alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя"
+rus_upper_alphabet = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+# print('Вас приветствует программа "Шифр Цезаря".')
+# while True:
+#     print('''Сделайте выбор:
+#     >> 1 - если Вы хотите зашифровать сообщение
+#     >> 2 - если Вы хотите расшифровать сообщение''')
+#     way = input('>>')
+#     if way != '1' and way != '2':
+#         print('Вы ошиблись при вводе, попробуйте еще раз.')
+#     else:
+#         way = int(way)
+#         break
+# while True:
+#     print('''Выберите язык сообщения:
+#     >> rus - русский
+#     >> en - английский''')
+#     lang = input('>>')
+#     if lang != 'rus' and lang != 'en':
+#         print('Вы ошиблись при вводе, попробуйте еще раз.')
+#     else:
+#         break
+# while True:
+#     sdvig = input('Введите шаг сдвига:\n>>')
+#     if not sdvig.isdigit():
+#         print('Вы ошиблись при вводе, попробуйте еще раз.')
+#     else:
+#         sdvig = int(sdvig)
+#         break
+# while True:
+#     text = input('Введите сообщение\n>>')
+#     if proverka_text(text, lang):
+#         break
+#     else:
+#         print('Язык сообщения не соответствует выбранному языку. Попробуйте еще раз.')
+        
+# # вывод результата
+print(code_text(way, sdvig, lang, text))
