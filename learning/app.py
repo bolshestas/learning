@@ -2811,3 +2811,4 @@ if predicate(num1, num2) == True:
     print('делится')
 else:
     print('не делится')
+
