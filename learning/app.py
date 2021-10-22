@@ -2940,3 +2940,55 @@ from math import pow, factorial
         
 # # вывод результата
 # print(code_text(way, sdvig, lang, text))
+
+
+# n, m = int(input()), int(input())    # считываем значения n и m
+# my_list = [0] * n
+
+# for i in range(n):
+#     my_list[i] = [0] * m
+
+# print(my_list)
+
+
+# n, m = int(input()), int(input())    # считываем значения n и m
+
+# my_list = [[0] * m ] * n
+
+# print(my_list)
+
+
+# n, m = int(input()), int(input())
+
+# my_list = [[0] * m ] * n
+# my_list[0][0] = 17
+
+# print(my_list)
+
+
+# my_list = [[1, 9, 8, 7, 4], [7, 3, 4], [2, 1]]
+
+# total = 0
+# for i in range(len(my_list)):
+#     for j in range(len(my_list[i])):
+#         total += my_list[i][j]
+# print(total)
+
+
+# n = int(input())
+# my_list = []
+
+# for i in range(n):
+#     roster = []
+#     for j in range(1, i + 1):
+#         my_list.append([i] * n)
+
+
+#     print(my_list[i][j])
+
+
+n = int(input())
+list = []
+for i in range(n):
+    list = [value for value in range(1, n+1)]
+    print(list)
