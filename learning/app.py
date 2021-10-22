@@ -2987,8 +2987,32 @@ from math import pow, factorial
 #     print(my_list[i][j])
 
 
+# n = int(input())
+# list = []
+# for i in range(1, n + 1):
+#     list = [value for value in range(1, n+1)]
+#     print(list)
+
+
 n = int(input())
 list = []
+# for i in range(1, n + 1):
+#     for j in range(n + 1):
+#         list.append([i])
+
+# print(list)
+
+
 for i in range(n):
-    list = [value for value in range(1, n+1)]
-    print(list)
+    for j in range(1, i + 1):
+        list.extend([j])
+        print(list)
+
+
+n = int(input())
+result = []
+
+for i in range(1, n + 1):
+    result.append(list(range(1, i + 1)))
+
+print(*result, sep='\n')
