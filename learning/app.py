@@ -2994,8 +2994,8 @@ from math import pow, factorial
 #     print(list)
 
 
-n = int(input())
-list = []
+# n = int(input())
+# list = []
 # for i in range(1, n + 1):
 #     for j in range(n + 1):
 #         list.append([i])
@@ -3003,16 +3003,31 @@ list = []
 # print(list)
 
 
-for i in range(n):
-    for j in range(1, i + 1):
-        list.extend([j])
-        print(list)
+# for i in range(n):
+#     for j in range(1, i + 1):
+#         list.extend([j])
+#         print(list)
+
+
+# n = int(input())
+# result = []
+
+# for i in range(1, n + 1):
+#     result.append(list(range(1, i + 1)))
+
+# print(*result, sep='\n')
 
 
 n = int(input())
-result = []
+list1 = []
 
-for i in range(1, n + 1):
-    result.append(list(range(1, i + 1)))
+for i in range(n):
+    list2 = []
+    for j in range(i + 1):
+        if j == 0 or j == i:
+            list2.append(1)
+        else:
+            list2.append(list1[i - 1][j - 1] + list1[i - 1][j])
+    list1.append(list2)
 
-print(*result, sep='\n')
+print(list1)
