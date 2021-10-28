@@ -3030,4 +3030,4 @@ for i in range(n):
             list2.append(list1[i - 1][j - 1] + list1[i - 1][j])
     list1.append(list2)
 
-print(list1)
+print(*list1)
