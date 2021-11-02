@@ -3018,16 +3018,80 @@ from math import pow, factorial
 # print(*result, sep='\n')
 
 
-n = int(input())
-list1 = []
+# def pascaline(n):
+#     #  n -= 1
+#     #  line = [1]
+#     #  for k in range(max(n, 0)):             
+#     #      line.append(line[k] * (n - k)//(k + 1))             
+#     #  return line
 
-for i in range(n):
-    list2 = []
-    for j in range(i + 1):
-        if j == 0 or j == i:
-            list2.append(1)
-        else:
-            list2.append(list1[i - 1][j - 1] + list1[i - 1][j])
-    list1.append(list2)
 
-print(*list1)
+#     line = [1]
+#     for k in range(n):
+#         line.append(line[k] * (n-k) // (k+1))
+#     return line
+
+# num = int(input())
+
+# print(pascaline(num))
+
+
+# def pascaline(n):
+#     line = [1]
+#     for k in range(n):
+#         line.append(line[k] * (n - k) // (k + 1))
+#         print(*line)
+
+# num = int(input())
+
+# pascaline(num)
+
+
+# i = 0
+# num = int(input())
+# a = []
+# while i < num:
+#     if i == 0:
+#         a.append([1])
+#     elif i == 1:
+#         a.append([1,1])
+#     else:
+#         at = [1]
+
+# for j in range(len(a[i-1])-1):
+#     at.append(a[i-1][j]+a[i-1][j+1])
+#     at.append(1)
+#     a.append(at)
+#     i += 1
+
+# for i in range(len(a)):
+#     for j in range(len(a[i])):
+#         print(' ' * (6 - len(str(a[i][j]))) + str(a[i][j]),end='')
+#     print('')
+
+# def tri(num):
+#     i = 0
+#     a = []
+#     while i < num:
+#         if i == 0:
+#             a.append([1])
+#         elif i == 1:
+#             a.append([1,1])
+#         else:
+#             at = [1]
+#             for j in range(len(a[i-1])-1):
+#                 at.append(a[i-1][j]+a[i-1][j+1])
+#             at.append(1)
+#             a.append(at)
+#         i += 1
+#     return a
+
+# n = int(input())
+
+# a = tri(n)
+# for i in range(len(a)):
+#     for j in range(len(a[i])):
+#         print(str(a[i][j])+' ',end='')
+#     print('')
+
+
