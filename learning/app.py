@@ -3095,3 +3095,52 @@ from math import pow, factorial
 #     print('')
 
 
+# char_list = []
+# a = []
+
+# for char in input().split():
+#     if a == []:
+#         a.append(char)
+#     elif a != []:
+#         if a[-1] == char:
+#             a.append(char)
+#         else:
+#             char_list.extend(a)
+#             a == []
+#             a.append(char)
+
+# if a != 0:
+#     char_list.append(a)
+
+# print(char_list)
+
+
+# from itertools import groupby
+ 
+# s = input()
+# res =[list(v) for k, v in groupby(s.split())]
+# print(res)
+
+
+# def chunked(lst, num):
+#     for i in range(0, len(data), num):
+#         lst.append(list(data[i:i+num]))
+#     return lst
+                   
+ 
+ 
+# data = input().replace(' ', '')
+# num = int(input())
+# lst = []
+# print(chunked(lst, num))
+
+
+# str_in = input().split() # Получаем список
+ 
+# new_list = [[]]
+ 
+# for len_substr in range(len(str_in)):
+#     for i in range(len(str_in) - len_substr):
+#         new_list.append(str_in[i:i+len_substr+1])
+        
+# print(new_list)
