@@ -3144,3 +3144,47 @@ from math import pow, factorial
 #         new_list.append(str_in[i:i+len_substr+1])
         
 # print(new_list)
+
+
+# def print_matrix(matrix, n, width=1):
+#     for r in range(n):
+#         for c in range(n):
+#             print(str(matrix[r][c]).ljust(width), end=' ')
+#         print()
+
+# n = 4
+# matrix = [[0]*n for _ in range(n)]
+
+
+# print_matrix(matrix, n, width=1)
+
+
+# n = int(input())
+# matrix = []
+# for i in range(n):
+#     temp = [int(num) for num in input().split()]
+#     matrix.append(temp)
+
+
+# m, n = int(input()), int(input())
+
+# matrix = []
+
+# for i in range(m):
+#     for j in range(n):
+#         print(matrix[i][j], end=' ')
+#     print()
+
+
+rows, cols = int(input()), int(input())
+matrix  = []
+
+for i in range(cols):
+    temp = [num for num in input().split()]
+    matrix.append(temp)
+
+
+for r in range(rows):  # тут я просто вывожу матрицу
+    for c in range(cols):
+        print(matrix[r][c], end=' ')
+    print()
