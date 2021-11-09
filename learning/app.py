@@ -3144,3 +3144,5 @@ from math import pow, factorial
 #         new_list.append(str_in[i:i+len_substr+1])
         
 # print(new_list)
+
+
