@@ -3146,14 +3146,13 @@ from math import pow, factorial
 # print(new_list)
 
 
-# n, m = int(input()), int(input())
+n, m = int(input()), int(input())
 
-# matrix = []
-# for i in range(n):
-#     matrix.append([None]*m)
+matrix = [[0]*m for _ in range(n)]
 
-# for i in range(n):
-#     for j in range(m):
-#         matrix[i][j] == input()
-
-# print(matrix)
+for i in range(n):
+    for j in range(m):
+        matrix[i][j] = input()
+        
+        print(str(matrix[i][j]), end=' ')
+    print()
