@@ -3156,3 +3156,35 @@ from math import pow, factorial
         
 #         print(str(matrix[i][j]), end=' ')
 #     print()
+
+
+# n, m = int(input()), int(input())
+
+# matrix = [[0]*m for _ in range(n)]
+
+# for i in range(n):
+#     for j in range(m):
+#         matrix[i][j] = input()
+        
+#         print(str(matrix[i][j]), end=' ')
+#     print()
+
+
+n, m = int(input()), int(input())
+
+matrix = [[0]*m for _ in range(n)]
+
+for i in range(n):
+    for j in range(m):
+        matrix[i][j] = input()
+        
+        print(str(matrix[i][j]), end=' ')
+    print()
+print()
+
+for i in range(n):
+    print(matrix[i][0], end=' ')
+
+print()
+for i in range(n):
+    print(matrix[i][1], end=' ')
