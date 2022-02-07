@@ -1,5 +1,10 @@
 class Car:
 
+    @staticmethod
+    def get_class_details():
+        print('Это класс Car')
+
+
     name = 'c200'
     make = 'mercedez'
     model = 2008
@@ -24,3 +29,15 @@ car_b = Car()
 car_b.start('City', 'Honda', 2013)
 print(car_b.name)
 print(car_b.car_count)
+
+
+Car.get_class_details()
+
+
+class Square:
+
+    @staticmethod
+    def get_squares(a, b):
+        return a * a, b * b
+
+print(Square.get_squares(3, 5))
